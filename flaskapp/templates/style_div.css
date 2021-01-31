@@ -1,0 +1,168 @@
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:#333;
+    margin:0px;
+}
+
+p {
+    /*padding: 10px;*/
+}
+
+h4 {
+	font-size: 0.8vw;
+	margin: 0px;
+}
+
+h5 {
+	font-size: 0.8vw;
+	margin: 0px;
+	font-weight: normal;
+}
+
+h6 {
+	font-size: 0.7vw;
+	margin: 0px;
+	font-weight: normal;
+}
+
+#wrapper {
+	align-content: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+#content {
+	height: 100%;
+    float: left;
+    background: #FFFFFF;
+    width: calc(100% - 120px);
+    font-size: 0.8em;
+}
+
+#rightcolumn {
+	height: 100%;
+    background: #CC33FF;
+    width: 120px;
+    /*min-width: 150px;*/
+    float: right;
+}
+
+.parent {
+	margin: 0px;
+	width: 90%;
+	height: 48vw;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: 1.2fr repeat(8, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 9 / 1 / 10 / 2; background-color: red; }
+.div2 { grid-area: 8 / 1 / 9 / 2; background-color: red; }
+.div3 { grid-area: 7 / 1 / 8 / 2; background-color: red; }
+.div4 { grid-area: 6 / 1 / 7 / 2; background-color: red; }
+.div5 { grid-area: 5 / 1 / 6 / 2; background-color: red; }
+.div6 { grid-area: 4 / 1 / 5 / 2; background-color: red; }
+.div7 { grid-area: 3 / 1 / 4 / 2; background-color: red; }
+.div8 { grid-area: 2 / 1 / 3 / 2; background-color: red; }
+.div9 { grid-area: 1 / 1 / 2 / 2; background-color: red; }
+.div10 { grid-area: 1 / 2 / 2 / 3; background-color: red; }
+.div11 { grid-area: 1 / 3 / 2 / 4; background-color: red; }
+.div12 { grid-area: 1 / 4 / 2 / 5; background-color: red; }
+.div13 { grid-area: 1 / 5 / 2 / 6; background-color: red; }
+.div14 { grid-area: 1 / 6 / 2 / 7; background-color: red; }
+.div15 { grid-area: 1 / 7 / 2 / 8; background-color: none; }
+.div16 { grid-area: 2 / 7 / 4 / 8; background-color: none; }
+.div17 { grid-area: 2 / 5 / 4 / 7; background-color: none; }
+.div18 { grid-area: 2 / 4 / 4 / 5; background-color: none; }
+.div19 { grid-area: 2 / 3 / 4 / 4; background-color: none; }
+.div20 { grid-area: 4 / 7 / 6 / 8; background-color: none; }
+.div21 { grid-area: 4 / 6 / 6 / 7; background-color: none; }
+.div22 { grid-area: 4 / 5 / 6 / 6; background-color: none; }
+.div23 { grid-area: 9 / 3 / 10 / 4; background-color: red; }
+.div24 { grid-area: 8 / 3 / 9 / 4; background-color: red; }
+.div25 { grid-area: 7 / 3 / 8 / 4; background-color: red; }
+.div26 { grid-area: 6 / 3 / 7 / 4; background-color: none; }
+.div27 { grid-area: 5 / 3 / 6 / 4; background-color: red; }
+.div28 { grid-area: 7 / 7 / 10 / 8; background-color: red; }
+.div29 { grid-area: 7 / 6 / 10 / 7; background-color: red; }
+.div30 { grid-area: 7 / 5 / 10 / 6; background-color: red; }
+.div31 { grid-area: 7 / 4 / 10 / 5; background-color: red; }
+
+.contentH {
+	height: 100%;
+	margin: 0px;
+	background-color: blue;
+}
+
+.consignH {
+	height: 19%;
+	background-color: grey;
+
+}
+
+.infoH {
+	height: 81%;
+	margin: 0px;
+	background-color: orange;
+	border-width: 1px;
+	/*border-width: 0px 1px 1px 0px;*/
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+.infoH:hover {
+	background-color: pink;
+	/*display: none;*/
+}
+
+.contentM {
+	height: 100%;
+	margin-top: 0.7vw;
+}
+
+.contentM2 {
+	height: 100%;
+	margin-top: 1.4vw;
+}
+
+.consignM {
+	height: 13%;
+	background-color: grey;
+
+}
+
+.infoM {
+	height: 87%;
+	margin: 0px;
+	background-color: orange;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+.contentV {
+	margin:0px;
+	height: 100%;
+	width: 110%;
+}
+
+.consignV {
+	height: 100%;
+	width: 10%;
+	background-color: grey;
+	float: right;
+}
+
+.infoV {
+	height: 100%;
+	margin-right: 10%;
+	background-color: orange;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	border-collapse: collapse;
+}
