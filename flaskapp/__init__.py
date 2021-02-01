@@ -19,7 +19,7 @@ def my_form_post():
     return text
 
 
-@app.route('/result/')
+@app.route('/trans/')
 def homepage():
     quotes = [
         "Salut, comment va??",
@@ -45,8 +45,11 @@ def homepage():
     citation = str(characters[get_random_item(characters)].capitalize() + " à dit: " +
                    (quotes[get_random_item(quotes)]))
 
+    citation2 = str(characters[get_random_item(characters)].capitalize() + " à dit: " +
+                    (quotes[get_random_item(quotes)]))
+
     # user_answer = input("Appuyer sur la touche ENTER pour continuer ou \"F\" pour quitter")
-    return render_template('result.html', citation=citation, title='MyQuote')
+    return render_template('trans.html', citation=citation, citation2=citation2, title='MyQuote')
 
 
 if __name__ == '__main__':

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="style_div.css">
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/trans.css') }}">
     <meta charset="utf-8">
     <title>Inscrire un titre ici</title>
     <!-- On peut avoir d'autres méta-données ici -->
@@ -203,7 +205,7 @@
 						</div>
 						<div class="infoM">
 							<h4>Mr HYENTOUDRI</h4>
-							<h5>IDS<br>Suivi Psycho<br>Allergie Poulet</h5>
+							<h5>{{ citation }}<br>Suivi Psycho<br>Allergie Poulet</h5>
 							<h6>SL 14/03/64 56a</h6>
 						</div>
 					</div>
@@ -214,7 +216,7 @@
 						</div>
 						<div class="infoM">
 							<h4>Mr HYENTOUDRI</h4>
-							<h5>IDS<br>Suivi Psycho<br>Allergie Poulet</h5>
+							<h5>{{ citation2 }}<br>Suivi Psycho<br>Allergie Poulet</h5>
 							<h6>SL 14/03/64 56a</h6>
 						</div>
 					</div>
@@ -314,7 +316,11 @@
 		  	</div>
         </div>
         <div id="rightcolumn">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+            <p>FlaskGpk</p>
+            <ul class="btnMenu">
+            	<li><i class="material-icons">local_printshop</i>
+            	Imprimer</li>
+            </ul>
         </div>
     </div>
   </body>
