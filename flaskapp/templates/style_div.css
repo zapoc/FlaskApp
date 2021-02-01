@@ -31,7 +31,7 @@ h6 {
     margin: auto;
     width: 100vw;
     height: 100vh;
-    background-color: blue;
+    background-color: none;
 }
 
 #content {
@@ -44,7 +44,7 @@ h6 {
 
 #rightcolumn {
 	height: 100%;
-    background: #CC33FF;
+    /*background: #CC33FF;*/
     width: 120px;
     /*min-width: 150px;*/
     float: right;
@@ -145,10 +145,15 @@ h6 {
 	border-collapse: collapse;
 }
 
+.infoM:hover {
+	background-color: pink;
+	/*display: none;*/
+}
+
 .contentV {
 	margin:0px;
 	height: 100%;
-	width: 110%;
+	width: calc(110% + 1px);
 }
 
 .consignV {
@@ -160,9 +165,44 @@ h6 {
 
 .infoV {
 	height: 100%;
-	margin-right: 10%;
+	margin-right: cacl(10% + 1px);
 	background-color: orange;
 	border-width: 0px 1px 1px 0px;
 	border-style: solid;
 	border-collapse: collapse;
+}
+
+.infoV:hover {
+	background-color: pink;
+	/*display: none;*/
+}
+
+ul.btnMenu {
+	list-style-type: none;
+	width: 120px;
+	padding: 0px;
+
+}
+
+ul.btnMenu li{
+	background-color: grey;
+	padding-left: 5%;
+	font-size: 0.8em;
+}
+
+ul.btnMenu li:hover{
+	background-color: yellow;
+}
+
+ul.btnMenu li:first-child {
+	border-radius: 2px;
+}
+
+.iconMenu {
+}
+
+i.material-icons {
+  font-size: 28px;
+  vertical-align: middle;
+  position: relative;
 }
