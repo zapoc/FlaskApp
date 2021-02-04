@@ -38,21 +38,21 @@ h6 {
 	height: 100%;
     float: left;
     background: #FFFFFF;
-    width: calc(100% - 200px);
+    width: calc(100% - 150px);
     font-size: 0.8em;
 }
 
 #rightcolumn {
 	height: 100%;
     /*background: #CC33FF;*/
-    width: 200px;
+    width: 150px;
     /*min-width: 150px;*/
     float: right;
 }
 
 .parent {
 	margin: 0px;
-	width: 95%;
+	width: 90%;
 	height: 48vw;
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
@@ -179,14 +179,14 @@ h6 {
 
 ul.btnMenu {
 	list-style-type: none;
-	width: 100%;
+	width: 120px;
 	padding: 0px;
 
 }
 
 ul.btnMenu li{
 	background-color: grey;
-	padding-left: 15%;
+	padding-left: 5%;
 	font-size: 0.8em;
 }
 
