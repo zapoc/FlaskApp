@@ -179,7 +179,7 @@ h6 {
 
 ul.btnMenu {
 	list-style-type: none;
-	width: 100%;
+	width: 95%;
 	padding: 0px;
 
 }
@@ -188,6 +188,8 @@ ul.btnMenu li{
 	background-color: grey;
 	padding-left: 15%;
 	font-size: 0.8em;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 ul.btnMenu li:hover{
@@ -195,7 +197,12 @@ ul.btnMenu li:hover{
 }
 
 ul.btnMenu li:first-child {
-	border-radius: 2px;
+	border-radius: 7px 7px 0px 0px;
+}
+
+
+ul.btnMenu li:last-child {
+	border-radius: 0px 0px 7px 7px;
 }
 
 .iconMenu {

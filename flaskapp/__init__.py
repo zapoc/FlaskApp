@@ -3,8 +3,24 @@
 
 from flask import Flask, request, render_template
 from random import randint
+import sqlite3
 
 app = Flask(__name__)
+
+
+def get_db_connection():
+    conn = sqlite3.connect('db/patients.db')
+    conn.row_factory = sqlite3.Row
+    return conn
+
+
+@app.route('/transb/')
+def index():
+    id = 1
+    conn = get_db_connection()
+    chambres = conn.execute('SELECT N_ch, nom, age FROM chambres WHERE id=?', (id,)).fetchone()
+    conn.close()
+    return render_template('trans.html', posts=chambres)
 
 
 @app.route('/')
@@ -19,7 +35,7 @@ def my_form_post():
     return text
 
 
-@app.route('/trans/')
+@app.route('/transX/')
 def homepage():
     quotes = [
         "Salut, comment va??",
@@ -50,6 +66,57 @@ def homepage():
 
     # user_answer = input("Appuyer sur la touche ENTER pour continuer ou \"F\" pour quitter")
     return render_template('trans.html', citation=citation, citation2=citation2, title='MyQuote')
+
+
+@app.route('/trans/')
+def homepage2():
+
+    characters = [
+        "Alvin",
+        "Joe",
+        "Siegfried",
+        "babar",
+        "casper",
+        "Kirikou",
+    ]
+
+    quotes = [
+        "IDS",
+        "TS",
+        "TSM",
+        "HOR",
+        "SLG",
+        "TPC",
+    ]
+
+    comm1 = [
+        "Aller Potiron",
+        "Allergie Carotte",
+    ]
+
+    comm2 = [
+        "Test",
+        "",
+    ]
+
+    info = [
+        "",
+        "",
+    ]
+
+    ch1_name = str(characters[0].capitalize())
+    ch1_hospi = str(quotes[0])
+    ch1_comm1 = str(comm1[0])
+    ch1_comm2 = str(comm2[0])
+    ch1_info = str(info[0])
+    ch2_name = str(characters[1].capitalize())
+    ch2_hospi = str(quotes[1])
+    return render_template('trans.html',
+                           ch1_name=ch1_name, ch1_hospi=ch1_hospi, ch1_comm1=ch1_comm1, ch1_comm2=ch1_comm2,
+                           ch1_info=ch1_info,
+                           ch2_name=ch2_name, ch2_hospi=ch2_hospi, ch2_comm1=ch1_comm1, ch2_comm2=ch1_comm2,
+                           ch2_info=ch1_info,
+                           title='MyQuote')
 
 
 if __name__ == '__main__':

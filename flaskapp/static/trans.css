@@ -38,21 +38,21 @@ h6 {
 	height: 100%;
     float: left;
     background: #FFFFFF;
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     font-size: 0.8em;
 }
 
 #rightcolumn {
 	height: 100%;
     /*background: #CC33FF;*/
-    width: 150px;
+    width: 200px;
     /*min-width: 150px;*/
     float: right;
 }
 
 .parent {
 	margin: 0px;
-	width: 90%;
+	width: 95%;
 	height: 48vw;
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
@@ -179,15 +179,17 @@ h6 {
 
 ul.btnMenu {
 	list-style-type: none;
-	width: 120px;
+	width: 95%;
 	padding: 0px;
 
 }
 
 ul.btnMenu li{
 	background-color: grey;
-	padding-left: 5%;
+	padding-left: 15%;
 	font-size: 0.8em;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 ul.btnMenu li:hover{
@@ -195,7 +197,12 @@ ul.btnMenu li:hover{
 }
 
 ul.btnMenu li:first-child {
-	border-radius: 2px;
+	border-radius: 7px 7px 0px 0px;
+}
+
+
+ul.btnMenu li:last-child {
+	border-radius: 0px 0px 7px 7px;
 }
 
 .iconMenu {
